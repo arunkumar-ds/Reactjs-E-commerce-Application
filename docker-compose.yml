@@ -1,0 +1,8 @@
+services:
+  react-app:
+    image: ${IMAGE_NAME}:latest
+    ports:
+      - "80:80"
+    restart: always
+    # This ensures the container stays up-to-date
+    pull_policy: always
